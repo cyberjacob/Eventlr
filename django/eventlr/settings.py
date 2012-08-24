@@ -102,6 +102,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    'gunicorn',
     'south',
     'web',
     'django.contrib.auth',
