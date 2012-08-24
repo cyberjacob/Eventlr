@@ -5,6 +5,9 @@ import dj_database_url
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', ''))
 TEMPLATE_DEBUG = DEBUG
 
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+STATIC_ROOT= os.path.join(PROJECT_DIR,'staticfiles/')
+
 ADMINS = (
     ('cyberjacob', 'jacob@bluesapphiremedia.co.uk'),
 )
