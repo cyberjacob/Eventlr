@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import os
 import dj_database_url
 # Django settings for eventlr project.
@@ -53,7 +54,7 @@ STATIC_ROOT = ''
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
