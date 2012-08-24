@@ -102,6 +102,8 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    'kombu.transport.django',
+    'djcelery',
     'gunicorn',
     'south',
     'web',
@@ -156,3 +158,5 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
 STATIC_URL = 'http://static.eventlr.co.uk/'
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+
+BROKER_BACKEND = 'django'
