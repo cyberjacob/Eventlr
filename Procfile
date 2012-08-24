@@ -1,1 +1,1 @@
-web: gunicorn django/eventlr.wsgi -b 0.0.0.0:$PORT
+web: python django/manage.py run_gunicorn
