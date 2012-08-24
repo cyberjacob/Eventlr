@@ -5,8 +5,9 @@ import dj_database_url
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', ''))
 TEMPLATE_DEBUG = DEBUG
 
-PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
-#STATIC_ROOT= os.path.join(PROJECT_DIR,'staticfiles/')
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+MEDIA_ROOT = os.path.join(PROJECT_PATH, 'static/media')
+STATIC_ROOT = os.path.join(PROJECT_PATH,'staticfiles')
 
 ADMINS = (
     ('cyberjacob', 'jacob@bluesapphiremedia.co.uk'),
@@ -60,7 +61,7 @@ STATIC_ROOT = ''
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-#    os.path.join(PROJECT_ROOT,'static/')
+os.path.join(PROJECT_PATH, 'core/static'),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
