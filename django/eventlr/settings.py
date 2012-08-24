@@ -5,7 +5,7 @@ import dj_database_url
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', ''))
 TEMPLATE_DEBUG = DEBUG
 
-PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+PROJECT_PATH = os.path.realpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),".."))
 MEDIA_ROOT = os.path.join(PROJECT_PATH, 'static/media')
 STATIC_ROOT = os.path.join(PROJECT_PATH,'staticfiles')
 
