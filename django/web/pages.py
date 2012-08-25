@@ -1,4 +1,6 @@
 from django.http import HttpResponse
+from django.template import Template
 
 def index(request):
-    return object_list(request, template_name='test.html')
+    t = django.template.loader.get_template('test.html')
+    return t.render()
