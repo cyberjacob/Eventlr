@@ -3,4 +3,5 @@ import django.template
 
 def index(request):
     t = django.template.loader.get_template('test.html')
-    return t.render({})
+    c = django.template.Context({})
+    return t.render(c)
