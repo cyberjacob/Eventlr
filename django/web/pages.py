@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.template import Template
+import django.template
 
 def index(request):
     t = django.template.loader.get_template('test.html')
