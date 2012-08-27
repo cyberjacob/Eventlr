@@ -7,7 +7,7 @@ TEMPLATE_DEBUG = DEBUG
 
 PROJECT_PATH = os.path.realpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),".."))
 MEDIA_ROOT = os.path.join(PROJECT_PATH, 'static/media')
-STATIC_ROOT = os.path.join(PROJECT_PATH,'staticfiles')
+STATIC_ROOT = os.path.join(PROJECT_PATH,'static')
 
 ADMINS = (
     ('cyberjacob', 'jacob@bluesapphiremedia.co.uk'),
@@ -113,6 +113,7 @@ INSTALLED_APPS = (
     'gunicorn',
     'south',
     'web',
+    'registration',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -166,3 +167,5 @@ STATIC_URL = 'http://static.eventlr.co.uk/'
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
 BROKER_BACKEND = 'django'
+
+ACCOUNT_ACTIVATION_DAYS = 1
