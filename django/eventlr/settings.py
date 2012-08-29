@@ -169,3 +169,7 @@ ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 BROKER_BACKEND = 'django'
 
 ACCOUNT_ACTIVATION_DAYS = 1
+
+EMAIL_HOST = 'localhost'
+DEFAULT_FROM_EMAIL = 'no-reply@eventlr.co.uk'
+LOGIN_REDIRECT_URL = '/'
