@@ -170,6 +170,8 @@ BROKER_BACKEND = 'django'
 
 ACCOUNT_ACTIVATION_DAYS = 1
 
-EMAIL_HOST = 'localhost'
+EMAIL_HOST = 'a2s65.a2hosting.com'
+EMAIL_HOST_USER = 'no-reply@eventlr.co.uk'
+EMAIL_HOST_PASSWORD = 'Itvet123'
 DEFAULT_FROM_EMAIL = 'no-reply@eventlr.co.uk'
 LOGIN_REDIRECT_URL = '/'
