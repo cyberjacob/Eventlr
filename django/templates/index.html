@@ -49,7 +49,7 @@
 {% if user.is_authenticated %}
 <p class="navbar-text pull-right">Logged in as <a href="/user/{{ user.username }}">{{ user.username }}</a>. <a href="/account/logout">Not you?</a></p>
         {% else %}
-<p class="navbar-text pull-right">Not logged in. <a href="/login">Log in</a> or <a href="/account/register">?</a></p>
+<p class="navbar-text pull-right">Not logged in. <a href="/login">Log in</a> or <a href="/account/register">register</a>?</p>
         {% endif %}
           </div><!--/.nav-collapse -->  
         </div>  
