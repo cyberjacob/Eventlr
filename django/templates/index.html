@@ -47,9 +47,9 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
 {% if user.is_authenticated %}
-<p class="navbar-text pull-right">Logged in as <a href="/user/{{ user.username }}">{{ user.username }}</a>. <a href="{{% url "auth_logout" %}}">Not you?</a></p>
+<p class="navbar-text pull-right">Logged in as <a href="/user/{{ user.username }}">{{ user.username }}</a>. <a href="/account/logout">Not you?</a></p>
         {% else %}
-<p class="navbar-text pull-right">Not logged in. <a href="{{% url auth_login %}}">Log in</a> or <a href="{{% url auth_register %}}">?</a></p>
+<p class="navbar-text pull-right">Not logged in. <a href="/login">Log in</a> or <a href="/account/register">?</a></p>
         {% endif %}
           </div><!--/.nav-collapse -->  
         </div>  
