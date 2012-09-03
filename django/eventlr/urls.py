@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from django.views.generic.simple import direct_to_template
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -19,6 +20,6 @@ urlpatterns = patterns('',
     url(r'^account/', include('registration.backends.default.urls')),
     url(r'^oauth2/', include('provider.oauth2.urls', namespace = 'oauth2')),
 
-    url(r'^legal/terms$', 'direct_to_template', {'template': 'terms.html'}),
-    url(r'^legal/privacy$', 'direct_to_template', {'template': 'privacy.html'}),
+    url(r'^legal/terms$', direct_to_template, {'template': 'terms.html'}),
+    url(r'^legal/privacy$', direct_to_template, {'template': 'privacy.html'}),
 )
