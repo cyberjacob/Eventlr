@@ -7,7 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'web.pages.index', name='home'),
-    url(r'^api/', include('api.urls')),
+    #url(r'^api/', include('api.urls')),
     # url(r'^eventlr/', include('eventlr.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
