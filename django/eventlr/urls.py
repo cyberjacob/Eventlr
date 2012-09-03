@@ -19,6 +19,6 @@ urlpatterns = patterns('',
     url(r'^account/', include('registration.backends.default.urls')),
     url(r'^oauth2/', include('provider.oauth2.urls', namespace = 'oauth2')),
 
-    url(r'^legal/terms$', direct_to_template, {'template': 'terms.html'}),
-    url(r'^legal/privacy$', direct_to_template, {'template': 'privacy.html'}),
+    url(r'^legal/terms$', 'direct_to_template', {'template': 'terms.html'}),
+    url(r'^legal/privacy$', 'direct_to_template', {'template': 'privacy.html'}),
 )
