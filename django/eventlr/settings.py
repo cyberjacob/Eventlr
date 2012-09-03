@@ -110,7 +110,6 @@ TEMPLATE_DIRS = (
 INSTALLED_APPS = (
     'provider',
     'provider.oauth2',
-    'django-piston',
     'kombu.transport.django',
     'djcelery',
     'gunicorn',
