@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+      <div class="row-fluid">  
+        <div class="span3">  
+          <div class="well sidebar-nav">  
+            <ul class="nav nav-list">  
+              <li class="active"><a href="#">Dashboard</a></li>
+              <li class="nav-header">Events</li>  
+              <li><a href="#">All events</a></li>  
+              <li><a href="#">Create</a></li>  
+              <li><a href="#">Timetables</a></li>  
+              <li><a href="#">Teams</a></li>  
+              <li><a href="#">Locations</a></li>    
+              <li class="nav-header">Teams</li>  
+              <li><a href="#">All teams</a></li>  
+              <li><a href="#">Create</a></li>  
+              <li><a href="#">Members</a></li>
+              <li class="nav-header">Mobile</li>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">iPhone/iPad/iPod</a></li>
+              <li><a href="#">Blackberry</a></li>
+              <li><a href="#">Windows Phone</a></li>
+           </ul>  
+          </div><!--/.well -->  
+        </div><!--/span-->  
+        <div class="span9">  
+{% block content %}{% endblock %}
+            </div><!--/span-->  
+          </div><!--/row-->  
+{% endblock %}

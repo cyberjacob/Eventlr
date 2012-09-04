@@ -1,45 +1,21 @@
-{% extends "base.html" %}
+{% extends "dash.html" %}
 {% load i18n %}
 {% block content %}
-      <div class="row-fluid">  
-        <div class="span3">  
-          <div class="well sidebar-nav">  
-            <ul class="nav nav-list">  
-              <li class="active"><a href="#">Dashboard</a></li>
-              <li class="nav-header">Events</li>  
-              <li><a href="#">All events</a></li>  
-              <li><a href="#">Create</a></li>  
-              <li><a href="#">Timetables</a></li>  
-              <li><a href="#">Teams</a></li>  
-              <li><a href="#">Locations</a></li>    
-              <li class="nav-header">Teams</li>  
-              <li><a href="#">All teams</a></li>  
-              <li><a href="#">Create</a></li>  
-              <li><a href="#">Members</a></li>
-              <li class="nav-header">Mobile</li>
-              <li><a href="#">Android</a></li>
-              <li><a href="#">iPhone/iPad/iPod</a></li>
-              <li><a href="#">Blackberry</a></li>
-              <li><a href="#">Windows Phone</a></li>
-           </ul>  
-          </div><!--/.well -->  
-        </div><!--/span-->  
-        <div class="span9">  
-          <div class="leaderboard">  
-            <h1>Manage. Organise. Coordinate. Eventlr.</h1>  
-            <p>Eventlr is the ultimate solution in event and team management. Organise everyone, everywhere with our new Android app.</p>  
-            <p><a class="btn btn-success btn-large">What are you waiting for?<br/>Join Eventlr now!</a></p>
-          </div>
-          <div class="row-fluid">  
-            <div class="span4">  
-              <h2>Organise</h2>  
-              <p>Organising events has never been easier. with Eventlr's team, timetable and location system, everyone will know where they should be.</p>  
-              <p><a class="btn btn-success btn-large" href="#">Start Organising now</a></p>  
-            </div><!--/span-->  
-            <div class="span4">  
-              <h2>Join Events</h2>  
-              <p>Taking part in large events has never been easier. With Eventlr's live notification system, we make sure you know any changes to the plans, no matter when they're made.</p>
-              <p><a class="btn btn-success btn-large" href="#">Join Events now</a></p>  
-            </div><!--/span-->  
-          </div><!--/row-->  
+    <div class="leaderboard">
+        <h1>Manage. Organise. Coordinate. Eventlr.</h1>
+        <p>Eventlr is the ultimate solution in event and team management. Organise everyone, everywhere with our new Android app.</p>
+        <p><a class="btn btn-success btn-large">What are you waiting for?<br/>Join Eventlr now!</a></p>
+    </div>
+    <div class="row-fluid">
+        <div class="span4">
+            <h2>Organise</h2>
+            <p>Organising events has never been easier. with Eventlr's team, timetable and location system, everyone will know where they should be.</p>
+            <p><a class="btn btn-success btn-large" href="#">Start Organising now</a></p>
+        </div><!--/span-->
+        <div class="span4">
+            <h2>Join Events</h2>
+            <p>Taking part in large events has never been easier. With Eventlr's live notification system, we make sure you know any changes to the plans, no matter when they're made.</p>
+            <p><a class="btn btn-success btn-large" href="#">Join Events now</a></p>
+        </div>
+    </div>
 {% endblock %}
