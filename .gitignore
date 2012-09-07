@@ -1,5 +1,0 @@
-django/env/bin/
-django/env/include/
-django/env/lib/
-django/env/share/
-*.pyc
